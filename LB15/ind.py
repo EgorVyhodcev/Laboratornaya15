@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 def start_sum(start):
-    def decorator(func):
-        def wrapper(*args):
+    def wrapper(func):
+        def wrapped(*args):
             print(f"Entering the wrapper with start value of {start}")
             print(f"Processing wrapped function: {func}")
             string = args[0]
